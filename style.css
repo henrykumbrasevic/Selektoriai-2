@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    margin: 0;
+}
+main{
+    width: 100vw;
+    height: 65vh;
+}
+:root{
+    --radius:50%;
+    --white:#FFFFFF;
+    --lightGray:#BBBBBB;
+    --tableColor:#E5E5E5;
+    --buttonColor: #DE2D2D;
+    --buttonText: #FEFEFE;
+    --footerColor: #333333;
+    --footerLinks: #88B15F;
+}
+header,footer,footer p{
+    display: flex;
+}
+header{
+    justify-content: space-around;
+    gap: 130rem;
+    font-family: "Ubuntu", sans-serif;
+    color: gray;
+}
+header p{
+    font-size: 35px;
+    color: var(--lightGray)
+}
+.pizza,.egg{
+    object-fit: cover;
+    position: absolute;
+    border-radius: var(--radius);
+}
+.pizza{
+    width: 25rem;
+    height: 25rem;
+    z-index: 1;
+    top: -8rem;
+    left: -21.5rem;
+}
+.egg{
+    width: 14rem;
+    height: 14rem;
+    border:solid 5px var(--white);
+    z-index: 2;
+    top: 12rem;
+    left: -25rem;
+}
+.logo{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 30px;
+}
+article{
+    background-color: var(--tableColor);
+    padding: 25px 50px 65px 80px;
+    width: 18rem;
+    position: relative;
+    top: 20rem;
+    left: 80rem;
+
+}
+.redbutton{
+    background-color:var(--buttonColor);
+    color: var(--buttonText);
+    font-size: 12px;
+    border: solid 1px; width: 9rem; padding: 10px; border-radius: 25px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.solidCircle{
+    background-color:var(--buttonColor);
+    border: solid 1px; width: 10rem; height: 10rem; border-color: var(--buttonColor); border-radius:var(--radius);
+    position: absolute;
+    top: -5rem;
+    left: 22rem;
+    z-index: -1;
+}
+.strippedCircle{
+    background-color:var(--buttonColor);
+    border: solid 1px; width: 10rem; height: 10rem; border-color: var(--buttonColor); border-radius:var(--radius);
+    position: absolute;
+    top: 25rem;
+    left: -15rem;
+}
+footer, footer p{
+    justify-content: center; 
+}
+footer{
+    margin-top: 7rem; 
+    width: 100vw;
+    height: 16rem;
+    background-color:var(--footerColor);
+    flex-direction: column;
+    text-align: center;
+}
+footer p{
+    color: var(--white);
+    margin-top: 0;
+}
+footer a{
+    color:var(--footerLinks);
+}
+footer div{
+    margin-top: 2rem;
+    color: var(--white);
+}
+
